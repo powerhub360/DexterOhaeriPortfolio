@@ -632,7 +632,6 @@ footer p {
         box-sizing: border-box;
     }
 
-    html,
     body {
         height: auto;
         width: 100%;
@@ -823,3 +822,4 @@ footer p {
     }
 
 }
+
