@@ -369,7 +369,7 @@ main {
 }
 
 .card-bg-learning::before {
-    background-image: url(image/learning.jpg);
+    background-image: url(image/Learning.jpg);
 }
 
 /* Project Stack Section */
@@ -827,6 +827,7 @@ footer p {
     }
 
 }
+
 
 
 
