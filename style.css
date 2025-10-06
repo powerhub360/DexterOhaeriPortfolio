@@ -107,6 +107,17 @@ header {
     height: 50px;
 }
 
+.download-link {
+    padding: 0.5rem 1rem;
+    color: var(--accent-color);
+}
+
+.email-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .sticky-nav ul {
     display: flex;
     gap: 20px;
@@ -125,6 +136,9 @@ header {
 .sticky-nav ul li a:hover {
     color: var(--accent-color);
 }
+
+
+
 
 header .hero-sect {
     display: flex;
@@ -369,7 +383,7 @@ main {
 }
 
 .card-bg-learning::before {
-    background-image: url(image/Learning.jpg);
+    background-image: url(image/learning.jpg);
 }
 
 /* Project Stack Section */
@@ -494,6 +508,12 @@ main {
     cursor: pointer;
 }
 
+.tools-used {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 #project-stack button:hover {
     background-color: var(--accent-color2);
 }
@@ -514,14 +534,10 @@ main {
 
 #subscribe {
     background-color: var(--secondary-color);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 30vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: var(--container-padding);
@@ -549,6 +565,10 @@ main {
     transition: background-color 0.3s ease-in-out;
     font-family: var(--body-font);
     padding: 0.5rem 1rem;
+}
+
+#subscribe button:hover {
+    background-color: rgb(2, 161, 161);
 }
 
 footer {
@@ -621,6 +641,78 @@ footer p {
     transition: transform 0.3s ease;
 }
 
+/* Media Query for Mobile Devices */
+
+/* iPad breakpoint: 768px - 1024px */
+@media screen and (min-width: 481px) and (max-width: 1600px) {
+
+    /* Maintain sticky-nav structure and spacing */
+    .sticky-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 3rem;
+        gap: 2rem;
+    }
+
+    .sticky-nav ul {
+        gap: 1rem;
+    }
+
+    header {
+        background-image: url(image/Dexter_Bg.png);
+        background-size: cover;
+        /* Changed from 'contain' to 'cover' */
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        padding: var(--container-padding);
+        line-height: var(--header-line-height);
+    }
+
+    header h1 {
+        font-size: clamp(3rem, 6vw, 4.5rem);
+        /* Larger for iPad */
+    }
+
+    header span {
+        font-size: clamp(3rem, 6vw, 4.5rem);
+        /* Match h1 span */
+    }
+
+    header h2 {
+        font-size: clamp(2.5rem, 5vw, 3.5rem);
+        /* Slightly larger */
+    }
+
+    /* Adjust #subscribe section */
+    #subscribe {
+        height: auto;
+        padding: 3rem 2rem;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    #subscribe p {
+        font-size: 1.1rem;
+        max-width: 90%;
+    }
+
+    #subscribe h2 {
+        font-size: var(--h4-font-size);
+    }
+
+    #subscribe button {
+        width: auto;
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Optional: Adjust hero section padding if needed */
+    header .hero-sect {
+        padding: 4rem;
+    }
+}
 
 @media (max-width: 480px) {
 
@@ -632,6 +724,7 @@ footer p {
         box-sizing: border-box;
     }
 
+    html,
     body {
         height: auto;
         width: 100%;
@@ -744,7 +837,7 @@ footer p {
     }
 
     header {
-        height: 90vh;
+        height: 60vh;
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
@@ -775,11 +868,6 @@ footer p {
     .about-left .portrait-img {
         width: 150px;
         height: 150px;
-    }
-
-       .about-right {
-        width: 100%;
-        height: auto;
     }
 
     #what-i-do {
@@ -827,7 +915,3 @@ footer p {
     }
 
 }
-
-
-
-
