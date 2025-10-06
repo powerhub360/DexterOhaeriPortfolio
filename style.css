@@ -779,7 +779,18 @@ footer p {
         height: 100px;
     }
 
+    #subscribe {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
     #subscribe p {
         font-size: 1rem;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0.5rem 0;
     }
+
 }
