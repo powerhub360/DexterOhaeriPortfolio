@@ -777,6 +777,11 @@ footer p {
         height: 150px;
     }
 
+       .about-right {
+        width: 100%;
+        height: auto;
+    }
+
     #what-i-do {
         display: flex;
         flex-wrap: wrap;
@@ -822,4 +827,5 @@ footer p {
     }
 
 }
+
 
