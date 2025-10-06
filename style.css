@@ -624,6 +624,22 @@ footer p {
 
 @media (max-width: 480px) {
 
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: auto;
+        width: 100%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
     .sticky-nav {
         flex-direction: row;
         align-items: center;
@@ -749,7 +765,7 @@ footer p {
         align-items: center;
     }
 
-    .container,
+
     #about,
     #what-i-do,
     #project-stack .content {
@@ -762,21 +778,34 @@ footer p {
         height: 150px;
     }
 
+    #what-i-do {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
     #what-i-do .card {
         height: 140px;
         padding: 0.5rem;
+
     }
 
+    #project-stack {
+        padding: 1rem 0;
+        gap: 1rem;
+    }
 
     #about p {
         font-size: 0.9rem;
         line-height: 1.4;
         margin: 0;
-        padding: 0.5rem 0;
+        padding: 0 2.5rem;
     }
 
     #project-stack .card {
-        height: 100px;
+        height: auto;
     }
 
     #subscribe {
